@@ -1,0 +1,14 @@
+import mysql.connector
+
+banco = mysql.connector.connect(
+    host="localhost",
+    user="root",
+    passwd="",
+)
+
+cursor = banco.cursor()
+
+cursor.execute("CREATE DATABASE python_youtube")  # Criar database
+
+# show databases; = mostrar as bases de dados
+
